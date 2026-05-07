@@ -216,6 +216,13 @@ body {
   cursor: not-allowed;
 }
 
+.subscribe__captcha {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
 .subscribe__status {
   font-family: 'Inter', sans-serif;
   font-size: 13px;

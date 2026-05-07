@@ -28,6 +28,12 @@
     }
   }
 
+  function resetTurnstile() {
+    if (window.turnstile && typeof window.turnstile.reset === 'function') {
+      try { window.turnstile.reset(); } catch (_) { /* ignore */ }
+    }
+  }
+
   form.addEventListener('submit', async function (event) {
     event.preventDefault();
 
@@ -70,6 +76,7 @@
       setStatus('Network error. Please check your connection and try again.', 'error');
     } finally {
       setBusy(false);
+      resetTurnstile();
     }
   });
 })();

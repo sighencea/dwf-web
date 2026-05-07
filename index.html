@@ -20,6 +20,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="css/styles.css" />
+
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
   <main class="stage">
@@ -57,6 +59,12 @@
               <span class="subscribe__button-label">Notify Me</span>
             </button>
           </div>
+          <div
+            class="cf-turnstile subscribe__captcha"
+            data-sitekey="0x4AAAAAAC8dtJ2Sc50am-lW"
+            data-size="invisible"
+            data-theme="light"
+          ></div>
           <p class="subscribe__status" id="subscribe-status" role="status" aria-live="polite"></p>
         </form>
       </section>
