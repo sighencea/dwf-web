@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Drive Without Fear — Coming Soon</title>
+<meta name="description" content="Drive Without Fear — evidence-based therapy to help you overcome driving anxiety and reclaim your freedom. Launching 2026." />
+<meta name="theme-color" content="#F4EFE6" />
+
+<meta property="og:title" content="Drive Without Fear — Coming Soon" />
+<meta property="og:description" content="Evidence-based therapy to help you overcome driving anxiety and reclaim your freedom. Launching 2026." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="assets/logo-icon.png" />
+
+<link rel="icon" type="image/png" href="assets/logo-icon.png" />
+<link rel="apple-touch-icon" href="assets/logo-icon.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <main class="stage">
+    <div class="bg" aria-hidden="true"></div>
+
+    <div class="frame">
+      <header class="brand">
+        <img src="assets/logo-icon.png" alt="Drive Without Fear" class="brand__icon" />
+        <div class="brand__word">
+          <span class="brand__name">DRIVE</span>
+          <span class="brand__tag">WITHOUT&nbsp;&nbsp;FEAR</span>
+        </div>
+      </header>
+
+      <section class="hero">
+        <h1 class="hero__title">Coming Soon</h1>
+        <div class="hero__rule" aria-hidden="true"></div>
+        <p class="hero__copy">
+          We&rsquo;re building a new way forward. Evidence-based therapy to help you overcome driving anxiety and reclaim your freedom.
+        </p>
+
+        <form class="subscribe" id="subscribe-form" action="https://formspree.io/f/xgodzqvn" method="POST" novalidate>
+          <label class="subscribe__label" for="email">Be the first to know when we launch</label>
+          <div class="subscribe__row">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="you@example.com"
+              autocomplete="email"
+              required
+            />
+            <button class="subscribe__button" type="submit">
+              <span class="subscribe__button-label">Notify Me</span>
+            </button>
+          </div>
+          <p class="subscribe__status" id="subscribe-status" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <footer class="meta">
+        <span>Drive Without Fear</span>
+        <span><span class="meta__dot"></span>Launching 2026</span>
+      </footer>
+    </div>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
